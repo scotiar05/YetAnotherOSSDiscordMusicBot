@@ -14,12 +14,12 @@ A feature-rich, high-performance Discord music bot with audio filters, caching s
 ## ✨ Features
 
 - 🎵 High-quality music playback
-- 🎚️ 15+ real-time audio filters (nightcore, bass boost, reverb, etc.)
-- 📋 Queue management with shuffle and loop modes
+- 🎚️ 15+ real-time audio filters (nightcore, bass boost, reverb, etc.) + easy to add more
+- 📋 Queue management with shuffle and loop modes (FairQueue technology coming soon...)
 - 💾 Smart caching system for faster playback
 - 🎮 Intuitive commands with aliases
 - 🔊 Volume control
-- 🎯 Support for direct URLs and search queries
+- 🎯 Support for direct URLs and search queries (we support anything that YT-DLP supports, pretty much)
 - ⚡ Quick response times
 - 🛠️ Configurable via config.json
 
@@ -28,15 +28,15 @@ A feature-rich, high-performance Discord music bot with audio filters, caching s
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) (v16.9.0 or higher)
-- [FFmpeg](https://ffmpeg.org/)
+- [FFmpeg](https://ffmpeg.org/) (for YT-DLP and Filter support, next to YT-DLP executable)
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 
 ### Installation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/scotiar05/discord-music-bot.git
-cd discord-music-bot
+git clone https://github.com/scotiar05/YetAnotherOSSDiscordMusicBot.git
+cd YetAnotherOSSDiscordMusicBot
 ```
 
 2. Install dependencies:
@@ -109,7 +109,7 @@ node index.js
 ## 📦 Project Structure
 
 ```
-discord-music-bot/
+YetAnotherOSSDiscordMusicBot/
 ├── index.js           # Main bot file
 ├── config.json        # Configuration file
 ├── cache/            # Cached audio files
