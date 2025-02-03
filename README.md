@@ -35,7 +35,7 @@ A feature-rich, high-performance Discord music bot with audio filters, caching s
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/discord-music-bot.git
+git clone https://github.com/scotiar05/discord-music-bot.git
 cd discord-music-bot
 ```
 
