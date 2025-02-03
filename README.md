@@ -1,5 +1,11 @@
 # 🎵 Discord Music Bot (WIP ALPHA)
 
+Modifications coming. I need to remove FFMPEG from the main repo files, add its license in our "releases" page and have a proper "release" (that will have prepackaged FFMPEG, instead of it in being in the repostitory). And much more. WIP
+
+Voice Recognition coming soon as well.
+
+Anyways...:
+
 A feature-rich, high-performance Discord music bot with audio filters, caching system, and extensive command support.
 
 [![Discord.js](https://img.shields.io/badge/discord.js-v14-blue.svg)](https://discord.js.org)
