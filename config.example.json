@@ -1,0 +1,108 @@
+{
+    "token": "YOUR_BOT_TOKEN_HERE",
+    "prefix": "!",
+    "cache": {
+        "directory": "cache",
+        "maxSize": 1073741824,
+        "maxAge": 604800000,
+        "tempDirectory": "downloads"
+    },
+    "audio": {
+        "maxSongDuration": 600,
+        "maxQueueSize": 100
+    },
+    "filters": {
+        "nightcore": {
+            "name": "nightcore",
+            "ffmpegFilter": "asetrate=44100*1.25,aresample=44100,atempo=0.8",
+            "description": "Increase pitch and speed (nightcore effect)"
+        },
+        "vaporwave": {
+            "name": "vaporwave",
+            "ffmpegFilter": "asetrate=44100*0.8,aresample=44100,atempo=1.25",
+            "description": "Decrease pitch and slow down"
+        },
+        "earrape": {
+            "name": "earrape",
+            "ffmpegFilter": "acrusher=level_in=8:level_out=18:bits=8:mode=log:aa=1",
+            "description": "Add distortion effect"
+        },
+        "reverb": {
+            "name": "reverb",
+            "ffmpegFilter": "aecho=0.8:0.9:1000:0.3",
+            "description": "Add reverb effect"
+        },
+        "slow": {
+            "name": "slow",
+            "ffmpegFilter": "atempo=0.8",
+            "description": "Slow down the audio (0.8x speed)"
+        },
+        "fast": {
+            "name": "fast",
+            "ffmpegFilter": "atempo=1.2",
+            "description": "Speed up the audio (1.2x speed)"
+        },
+        "pitch_up": {
+            "name": "pitch_up",
+            "ffmpegFilter": "asetrate=44100*1.2,aresample=44100",
+            "description": "Increase pitch"
+        },
+        "pitch_down": {
+            "name": "pitch_down",
+            "ffmpegFilter": "asetrate=44100*0.8,aresample=44100",
+            "description": "Decrease pitch"
+        },
+        "bass_boost": {
+            "name": "bass_boost",
+            "ffmpegFilter": "bass=g=10",
+            "description": "Boost bass frequencies"
+        },
+        "trebble": {
+            "name": "trebble",
+            "ffmpegFilter": "treble=g=10",
+            "description": "Boost high frequencies"
+        },
+        "chorus": {
+            "name": "chorus",
+            "ffmpegFilter": "chorus=0.5:0.9:50|60|40:0.4|0.32|0.3:0.25|0.4|0.3:2|2.3|1.3",
+            "description": "Add chorus effect"
+        },
+        "flanger": {
+            "name": "flanger",
+            "ffmpegFilter": "flanger",
+            "description": "Add flanger effect"
+        },
+        "phaser": {
+            "name": "phaser",
+            "ffmpegFilter": "aphaser=type=t",
+            "description": "Add phaser effect"
+        },
+        "vibrato": {
+            "name": "vibrato",
+            "ffmpegFilter": "vibrato=f=6.5:d=0.5",
+            "description": "Add vibrato effect"
+        },
+        "compressor": {
+            "name": "compressor",
+            "ffmpegFilter": "acompressor",
+            "description": "Add dynamic range compression"
+        }
+    },
+    "commands": {
+        "play": ["p", "play"],
+        "skip": ["s", "skip", "next"],
+        "stop": ["stop", "leave", "disconnect", "dc"],
+        "queue": ["q", "queue", "list"],
+        "pause": ["pause", "hold"],
+        "resume": ["resume", "r", "continue"],
+        "nowplaying": ["np", "now", "current"],
+        "loop": ["loop", "l", "repeat"],
+        "shuffle": ["shuffle", "sh", "mix"],
+        "volume": ["v", "vol", "volume"],
+        "clear-cache": ["clearcache", "cc"],
+        "help": ["h", "help", "commands"],
+        "filter": ["filter", "f"],
+        "filters": ["filters", "fx"],
+        "clearfilters": ["clearfilters", "cf"]
+    }
+}
